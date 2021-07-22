@@ -1,0 +1,42 @@
+.header {
+    background-color: #AA0601;
+    padding: 30px 88px;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between; 
+    .menu{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      li{
+          margin-right: 64px;
+      }
+      a{
+        display: block;
+        padding: 5px 0;
+        &:hover{
+          background: orange;
+        }
+      }
+    }
+}
+@media(max-width:767px){
+    .header{
+      flex-direction: column;
+      padding: 0;
+      .menu {
+        li{
+          text-align: center;
+          width: 50%;
+          margin:0 auto 0 auto;
+          border: 1px solid #fff;
+          padding: 8px 0;
+        }
+      }
+      a{
+        margin: 0 auto;
+        padding: 10px 0;
+        display: block;
+      }
+    }
+}
